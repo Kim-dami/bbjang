@@ -14,8 +14,43 @@
 <body>
 <!---------------------------------------- 메인리스트 ---------------------------------------->
 <div id="wrap">
-    <!-- 공통 헤더 -->
-	<div id="header" class="bg_blue">
+    <!-- 메인 헤더 -->
+<style>
+.header_bar{position:relative; top:5px; margin:0 5px; width:calc(100% - 10px); height:40px; line-height:40px; background-color:#fff; border-radius:3px 3px 3px 3px;box-shadow:0px 3px 3px #00679b; overflow:hidden;}
+.header_bar .header_btn{position:absolute; top:0; width:40px; height:40px;}
+.header_bar .header_btn a{position:absolute;top:0; display:block; width:100%; height:100%; text-indent:-9999px;}
+.header_bar .header_btn a:active{background:rgba(0,0,0,0.05);}
+
+.header_bar .btn_my{left:0;}
+.header_bar .btn_my a{left:0; z-index:1;}
+.header_bar .btn_my .link_my{display:block;}
+.header_bar .btn_my .link_reset{display:none;}
+.header_bar .btn_my .toggle_ico{position:relative; width:100%; height:100%; transform-origin:center; -webkit-transform-origin:center; -ms-transform-origin:center; -moz-transform-origin:center; -o-transform-origin:center; transition:all 0.3s ease-in-out; -webkit-transition:all 0.3s ease-in-out; -ms-transition:all 0.3s ease-in-out; -moz-transition:all 0.3s ease-in-out; -o-transition:all 0.3s ease-in-out;}
+.header_bar .btn_my .toggle_ico span{position:absolute; display:inline-block; left:12px; width:17px; height:2px; background-color:#0ca2ed; border-radius:3px; transition:all 0.3s ease-in-out; -webkit-transition:all 0.3s ease-in-out; -ms-transition:all 0.3s ease-in-out; -moz-transition:all 0.3s ease-in-out; -o-transition:all 0.3s ease-in-out;}
+.header_bar .btn_my .toggle_ico span:nth-of-type(1){top:14px;}
+.header_bar .btn_my .toggle_ico span:nth-of-type(2){top:19px;}
+.header_bar .btn_my .toggle_ico span:nth-of-type(3){top:24px;}
+
+.header_bar .btn_reset .link_my{display:none;}
+.header_bar .btn_reset .link_reset{display:block;}
+.header_bar .btn_reset .toggle_ico{transform: rotate(180deg); -webkit-transform: rotate(180deg); -ms-transform: rotate(180deg); -moz-transform: rotate(180deg); -o-transform: rotate(180deg);}
+.header_bar .btn_reset .toggle_ico span:nth-of-type(1){width:10px; top:16px; left:20.5px; transform:rotate(45deg); -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); -moz-transform: rotate(45deg); -o-transform: rotate(45deg);}
+.header_bar .btn_reset .toggle_ico span:nth-of-type(3){width:10px; top:22px; left:20.5px; transform:rotate(-45deg); -webkit-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -o-transform: rotate(-45deg);}
+
+.header_bar .header_srch{position:relative; width:calc(100% - 86px); height:100%; margin:0 auto; padding-right:30px; box-sizing:border-box;}
+.header_bar .header_srch .header_logo{position:absolute; top:0; left:0; width:100%; height:100%; text-indent:-9999px; background:url(img01/img_srch_logo.png) no-repeat left 8px; background-size:61px 21px;}
+.header_bar .header_srch label{display:none; position:absolute; top:0; left:0; width:100%; height:100%; line-height:40px; font-size:15px; color:#9d9fa2; letter-spacing:-0.5px;}
+.header_bar .header_srch input[type="text"]{position:relative; display:block; width:100%; height:100%; line-height:40px; border:none; outline:none; background-color:transparent;}
+.header_bar .header_srch .srch_del{position:absolute; top:0; right:0; width:30px; height:100%; background:url(img01/btn_srch_del.png) no-repeat right center; background-size:12px 12px;}
+.header_bar .header_srch .srch_del a{display:block; width:100%; height:100%; text-indent:-9999px;}
+
+.header_bar .btn_voice{display:none;right:0; background:url(img01/btn_srch_voice.png) no-repeat center center; background-size:13px 17px;}
+.header_bar .btn_voice a{right:0;}
+
+.header_bar .btn_shrch{ right:0; background:url(img01/btn_srch_on.png) no-repeat center center; background-size:19px 21px;}
+.header_bar .btn_shrch a{right:0;}
+</style>
+	<div id="header" class="ht_50 bg_blue">
     	<div class="header_bar">
         	<div class="header_btn btn_my">
             	<a href="#" class="link_my">마이메뉴</a>
@@ -30,20 +65,26 @@
             	<h1 class="header_logo">방부장</h1>
                 <label for="header_srch">방부장에서 빠르게 구하세요!</label>
             	<input type="text" id="header_srch">
+                <div class="srch_del">
+                	<a href="#">검색어 삭제</a>
+                </div>
             </div>
             <div class="header_btn btn_voice">
             	<a href="#">음성검색</a>
             </div>
+            <div class="header_btn btn_shrch">
+            	<a href="#">검색</a>
+            </div>
         </div>
     </div>
-    <!-- // 공통 헤더 -->
+    <!-- // 메인 헤더 -->
     <!-- 최근검색 및 추천검색 -->
     <div class="srch_drop">
         <ul>
             <li class="srch_history">
                 <a href="#" class="srch_go">원룸</a>
                 <div class="history_del">
-                    <a href="#">검색기록삭제</a>
+                    <a href="#">검색기록 삭제</a>
                 </div>
             </li>
             <li class="srch_history">
