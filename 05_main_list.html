@@ -15,9 +15,152 @@
 <!---------------------------------------- 메인리스트 ---------------------------------------->
 <div id="wrap">
     <!-- 공통 헤더 -->
-	<div id="header">
+	<div id="header" class="bg_blue">
+    	<div class="header_bar">
+        	<div class="header_btn btn_my">
+            	<a href="#" class="link_my">마이메뉴</a>
+                <a href="#" class="link_reset">검색 초기화</a>
+                <div class="toggle_ico">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="header_srch">
+            	<h1 class="header_logo">방부장</h1>
+                <label for="header_srch">방부장에서 빠르게 구하세요!</label>
+            	<input type="text" id="header_srch">
+            </div>
+            <div class="header_btn btn_voice">
+            	<a href="#">음성검색</a>
+            </div>
+        </div>
     </div>
     <!-- // 공통 헤더 -->
+    <!-- 최근검색 및 추천검색 -->
+    <div class="srch_drop">
+        <ul>
+            <li class="srch_history">
+                <a href="#" class="srch_go">원룸</a>
+                <div class="history_del">
+                    <a href="#">검색기록삭제</a>
+                </div>
+            </li>
+            <li class="srch_history">
+                <a href="#" class="srch_go">원룸 4500만</a>
+                <div class="history_del">
+                    <a href="#">검색기록삭제</a>
+                </div>
+            </li>
+            <li class="srch_rel">
+                <a href="#" class="srch_go">원룸 예쁜 집</a>
+            </li>
+            <li class="srch_rel">
+                <a href="#" class="srch_go">원룸 풀옵션</a>
+            </li>
+            <li class="srch_rel">
+                <a href="#" class="srch_go">원룸 직거래</a>
+            </li>
+        </ul>
+    </div>
+    <!-- // 최근검색 및 추천검색 -->
+    <!-- 상단 필터 -->
+    <div class="filter_wrap">
+    	<ul>
+        	<li>
+            	<select>
+                	<option>종류</option>
+                    <option>토지</option>
+                    <option>건물</option>
+                    <option>기타</option>
+                </select>
+            </li>
+            <li>
+            	<select>
+                	<option>유형</option>
+                    <option>매매</option>
+                    <option>전세</option>
+                    <option>월세</option>
+                    <option>구해요</option>
+                </select>
+            </li>
+            <li>
+            	<select>
+                	<option>시/도</option>
+                    <option>전체</option>
+                    <option>서울</option>
+                    <option>경기</option>
+                    <option>인천</option>
+                    <option>대전</option>
+                    <option>대구</option>
+                    <option>부산</option>
+                    <option>광주</option>
+                    <option>세종</option>
+                    <option>울산</option>
+                    <option>충북</option>
+                    <option>충남</option>
+                    <option>전북</option>
+                    <option>전남</option>
+                    <option>경북</option>
+                    <option>경남</option>
+                    <option>강원</option>
+                    <option>제주</option>
+                    <option>해외</option>
+                </select>
+            </li>
+            <li>
+            	<select>
+                	<option>시/군/구</option>
+                    <option>광산구</option>
+                    <option>남구</option>
+                    <option>동구</option>
+                    <option>북구</option>
+                    <option>서구</option>    
+                </select>
+            </li>
+            <li>
+            	<select>
+                	<option>읍/면/동</option>
+                    <option>각화동</option>
+                    <option>금곡동</option>
+                    <option>누문동</option>
+                    <option>대촌동</option>
+                    <option>덕의동</option>
+                    <option>동림동</option>
+                    <option>두암동</option>
+                    <option>망월동</option>
+                    <option>매곡동</option>
+                    <option>문흥동</option>    
+                </select>
+            </li>
+        </ul>
+    </div>
+    <!-- // 상단 필터 -->
+    <!-- 상단 결과 -->
+    <div class="result_wrap">
+    	<div class="align_wrap">
+        	<select>
+                <option>최신등록순</option>
+                <option>가격높은순</option>
+                <option>가격낮은순</option>
+                <option>면적넓은순</option>
+                <option>면적좁은순</option>   
+            </select>
+        </div>
+        <div class="result_container">
+        	<div class="result_txt">총 <span class="ft_blue">10,000</span> 건</div>
+            <div class="result_rfsh">
+            	<a href="#">
+                	결과값 새로고침
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- // 상단 결과 -->
+    <!-- 메인리스트 -->
+    <div id="container">
+    </div>
+    <!-- // 메인리스트 -->
 </div>
 
 <!-- 광고 삽입 부분 -->
