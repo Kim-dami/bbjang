@@ -9,6 +9,7 @@
 <link href="css/bbj_default.css" rel="stylesheet" type="text/css">
 <link href="css/bbj_main_list.css" rel="stylesheet" type="text/css">
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="js/bbj_design.js"></script>
 </head>
 <body>
@@ -25,15 +26,15 @@
 .header_bar .btn_my a{left:0; z-index:1;}
 .header_bar .btn_my .link_my{display:block;}
 .header_bar .btn_my .link_reset{display:none;}
-.header_bar .btn_my .toggle_ico{position:relative; width:100%; height:100%; transform-origin:center; -webkit-transform-origin:center; -ms-transform-origin:center; -moz-transform-origin:center; -o-transform-origin:center; transition:all 0.3s ease-in-out; -webkit-transition:all 0.3s ease-in-out; -ms-transition:all 0.3s ease-in-out; -moz-transition:all 0.3s ease-in-out; -o-transition:all 0.3s ease-in-out;}
-.header_bar .btn_my .toggle_ico span{position:absolute; display:inline-block; left:12px; width:17px; height:2px; background-color:#0ca2ed; border-radius:3px; transition:all 0.3s ease-in-out; -webkit-transition:all 0.3s ease-in-out; -ms-transition:all 0.3s ease-in-out; -moz-transition:all 0.3s ease-in-out; -o-transition:all 0.3s ease-in-out;}
+.header_bar .btn_my .toggle_ico{position:relative; width:100%; height:100%; transform-origin:center; -webkit-transform-origin:center; -ms-transform-origin:center; -moz-transform-origin:center; -o-transform-origin:center; transition:all 0.25s ease-in-out; -webkit-transition:all 0.25s ease-in-out; -ms-transition:all 0.25s ease-in-out; -moz-transition:all 0.25s ease-in-out; -o-transition:all 0.25s ease-in-out;}
+.header_bar .btn_my .toggle_ico span{position:absolute; display:inline-block; left:12px; width:17px; height:2px; background-color:#0ca2ed; border-radius:3px; transition:all 0.25s ease-in-out; -webkit-transition:all 0.25s ease-in-out; -ms-transition:all 0.25s ease-in-out; -moz-transition:all 0.25s ease-in-out; -o-transition:all 0.25s ease-in-out;}
 .header_bar .btn_my .toggle_ico span:nth-of-type(1){top:14px;}
 .header_bar .btn_my .toggle_ico span:nth-of-type(2){top:19px;}
 .header_bar .btn_my .toggle_ico span:nth-of-type(3){top:24px;}
 
 .header_bar .btn_reset .link_my{display:none;}
 .header_bar .btn_reset .link_reset{display:block;}
-.header_bar .btn_reset .toggle_ico{transform: rotate(180deg); -webkit-transform: rotate(180deg); -ms-transform: rotate(180deg); -moz-transform: rotate(180deg); -o-transform: rotate(180deg);}
+.header_bar .btn_reset .toggle_ico{transform: rotate(-180deg); -webkit-transform: rotate(-180deg); -ms-transform: rotate(-180deg); -moz-transform: rotate(-180deg); -o-transform: rotate(-180deg);}
 .header_bar .btn_reset .toggle_ico span:nth-of-type(1){width:10px; top:16px; left:20.5px; transform:rotate(45deg); -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); -moz-transform: rotate(45deg); -o-transform: rotate(45deg);}
 .header_bar .btn_reset .toggle_ico span:nth-of-type(3){width:10px; top:22px; left:20.5px; transform:rotate(-45deg); -webkit-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -o-transform: rotate(-45deg);}
 
@@ -41,13 +42,13 @@
 .header_bar .header_srch .header_logo{position:absolute; top:0; left:0; width:100%; height:100%; text-indent:-9999px; background:url(img01/img_srch_logo.png) no-repeat left 8px; background-size:61px 21px;}
 .header_bar .header_srch label{display:none; position:absolute; top:0; left:0; width:100%; height:100%; line-height:40px; font-size:15px; color:#9d9fa2; letter-spacing:-0.5px;}
 .header_bar .header_srch input[type="text"]{position:relative; display:block; width:100%; height:100%; line-height:40px; border:none; outline:none; background-color:transparent;}
-.header_bar .header_srch .srch_del{position:absolute; top:0; right:0; width:30px; height:100%; background:url(img01/btn_srch_del.png) no-repeat right center; background-size:12px 12px;}
+.header_bar .header_srch .srch_del{display:none; position:absolute; top:0; right:0; width:30px; height:100%; background:url(img01/btn_srch_del.png) no-repeat right center; background-size:12px 12px;}
 .header_bar .header_srch .srch_del a{display:block; width:100%; height:100%; text-indent:-9999px;}
 
-.header_bar .btn_voice{display:none;right:0; background:url(img01/btn_srch_voice.png) no-repeat center center; background-size:13px 17px;}
+.header_bar .btn_voice{right:0; background:url(img01/btn_srch_voice.png) no-repeat center center; background-size:13px 17px;}
 .header_bar .btn_voice a{right:0;}
 
-.header_bar .btn_shrch{ right:0; background:url(img01/btn_srch_on.png) no-repeat center center; background-size:19px 21px;}
+.header_bar .btn_shrch{display:none; right:0; background:url(img01/btn_srch_on.png) no-repeat center center; background-size:19px 21px;}
 .header_bar .btn_shrch a{right:0;}
 </style>
 	<div id="header" class="ht_50 bg_blue">
