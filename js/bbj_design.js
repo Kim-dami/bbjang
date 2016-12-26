@@ -51,4 +51,21 @@ $(document).ready(function(){
 		focus_out()
 	});
 	
+	/* 새로고침 click시 애니메이션 */
+	function rfsh_on(){
+		// 화살표 사라짐
+		$(".arrow_span").addClass("arrow_span_on");
+		// 로딩애니메이션
+		setTimeout(function(){
+			$(".result_rfsh").addClass("result_rfsh_on");
+		},150);
+		// 원상복귀
+		setTimeout(function(){
+			$(".arrow_span").removeClass("arrow_span_on");
+			$(".result_rfsh").removeClass("result_rfsh_on");
+		},700);
+	}
+	$(".result_rfsh").click(function(){
+		rfsh_on();
+	});
 });
