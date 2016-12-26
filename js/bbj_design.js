@@ -3,6 +3,7 @@ $(document).ready(function(){
 	/******************** 메인리스트 ********************/
 	/* 검색 포커스 인 */
 	function focus_in(){
+		//마이메뉴 아이콘을 검색 초기화 아이콘으로
 		$(".btn_my").addClass("btn_reset");
 		$(".header_logo").css("display","none");
 		// 검색바에 글씨가 써지거나 써져있는 경우
