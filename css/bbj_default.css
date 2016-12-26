@@ -66,11 +66,14 @@ td,th {padding:0;}
  ** 방부장 기본 css **
           */
 #wrap {position:relative; top:0; left:0; right:0; width:100%; height:auto;}
-#header {position:relative; top:0; left:0; right:0; display:block width:100%;}
+.pd_50 {padding-bottom:50px;}
+
+#header {position:relative; z-index:1000; top:0; left:0; right:0; display:block width:100%;}
 .ht_50{height:50px;}
 .ht_45{height:45px;}
+
 #container {position:relative; top:0; left:0; right:0; width:100%; height:auto;}
 .hidden {display:none;}
 
 /* 광고영역 */
-#ad_zone {display:block; position:fixed; bottom:0; left:0; right:0; z-index:800; width:100%; height:50px; line-height:50px; background-color:#989898; }
+#ad_zone {display:block; position:fixed; bottom:0; left:0; right:0; z-index:1000; width:100%; height:50px; line-height:50px; background-color:#989898; }
