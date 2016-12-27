@@ -1,5 +1,17 @@
 // JavaScript Document
 $(document).ready(function(){
+	/******************** 공통 ********************/
+	/* 기본 체크박스(파란배경 하얀체크) */
+	$(".chk_input").click(function(){
+		var chk_wrap = $(this).parents(".chk_wrap");
+		var chk_lb = $(chk_wrap).find(".chk_lb");
+		if($(this).prop("checked")){
+			$(chk_lb).css("background","url(http://image.club5678.com/imgs/bbjang/img01/btn_chk_on.png) no-repeat left center").css("background-size","22px 22px");
+		} else {
+			$(chk_lb).css("background","url(http://image.club5678.com/imgs/bbjang/img01/btn_chk_off.png) no-repeat left center").css("background-size","22px 22px");
+		}
+	});
+	
 	/******************** 메인리스트 ********************/
 	/* 검색 포커스 인 */
 	function focus_in(){
