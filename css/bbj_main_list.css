@@ -35,7 +35,7 @@
 .header_bar .btn_shrch a{right:0;}
 
 /* 최근검색 및 추천검색 */
-.srch_drop{display:none; position:absolute; top:45px; left:5px; right:5px; z-index:1000; width:calc(100% - 10px); height:auto; background-color:#fff; border-radius:0 0 3px 3px; box-shadow:3px 3px 5px #b9b9b9; overflow:hidden;}
+.srch_drop{display:none; position:absolute; top:45px; left:5px; right:5px; z-index:1000; width:calc(100% - 10px); height:auto; background-color:#fff; border-radius:0 0 3px 3px; box-shadow:1px 3px 5px #d7d7d7; overflow:hidden;}
 .srch_drop ul{position:relative; width:100%; height:auto;}
 .srch_drop ul li{position:relative; width:100%; height:40px; line-height:40px; font-size:14px; letter-spacing:-0.5px;}
 .srch_drop ul .srch_history{background:url(../img01/ico_srch_history.png) no-repeat 10px center; background-size:18px 18px;}
@@ -43,6 +43,7 @@
 .srch_drop ul .history_go{position:relative; width:100%; height:100%; padding:0 40px; box-sizing:border-box;}
 .srch_drop ul .history_del{position:absolute; top:0; right:0; width:40px; height:40px; background:url(../img01/btn_history_del.png) no-repeat center center; background-size:17px 17px;}
 .srch_drop ul .history_del a{position:relative; width:100%; height:100%; text-indent:-9999px;}
+.srch_drop ul .srch_rel{display:none;}
 .srch_drop ul .srch_go{position:relative; width:100%; height:100%; padding:0 10px; box-sizing:border-box;}
 
 /* 상단 필터 */
