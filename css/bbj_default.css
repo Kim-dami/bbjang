@@ -119,8 +119,8 @@ td,th {padding:0;}
 .list_card .list_intro .bot_line{width:100%; height:auto;}
 .list_card .list_intro .bot_line:after{content:""; display:block; clear:both;}
 .list_card .list_intro .bot_line .intro_option{width:100%; height:15px; clear:both; padding-top:5px;}
-.list_card .list_intro .bot_line .intro_time{width:60px; height:30px; line-height:30px; font-size:13px; color:#5b636b; float:left; text-align:center;}
-.list_card .list_intro .bot_line .intro_roca{width:auto; height:30px; line-height:30px; font-size:13px; color:#5b636b; float:left; padding-left:20px; background:url(../img01/ico_rocation.png) no-repeat 5px center; background-size:9px 11px;}
+.list_card .list_intro .bot_line .intro_time{width:60px; height:27px; line-height:27px; font-size:13px; color:#5b636b; float:left; text-align:center;}
+.list_card .list_intro .bot_line .intro_roca{width:auto; height:27px; line-height:27px; font-size:13px; color:#5b636b; float:left; padding-left:20px; background:url(../img01/ico_rocation.png) no-repeat 5px center; background-size:9px 11px;}
 
 .list_card .my_line{width:100%; height:auto; border-top:1px solid #dfdfdf;}
 .list_card .my_line:after{content:""; display:block; clear:both;}
