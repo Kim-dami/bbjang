@@ -74,4 +74,18 @@ $(document).ready(function(){
 	$(".result_rfsh").click(function(){
 		rfsh_on();
 	});
+	
+	/******************** active ********************/
+	$(".list_card .list_intro a").mousedown(function(){
+		$(this).addClass("a_active");
+	});
+	$(".list_card .list_intro a").mouseup(function(){
+		$(this).removeClass("a_active");
+	});
+	$(".btn_write a").mousedown(function(){
+		$($(this).find(".ripple")).addClass("ripple_active");
+	});
+	$(".btn_write a").mouseup(function(){
+		$($(this).find(".ripple")).removeClass("ripple_active");
+	});
 });
