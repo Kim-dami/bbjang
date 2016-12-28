@@ -11,6 +11,14 @@ $(document).ready(function(){
 			$(chk_lb).css("background","url(http://image.club5678.com/imgs/bbjang/img01/btn_chk_off.png) no-repeat left center").css("background-size","22px 22px");
 		}
 	});
+	/* 풀페이지 */
+	function full_page(){
+		var window_height =$(window).height();
+		var full_height = window_height + "px"
+		$(".full_page").css("height", full_height);
+	}
+	$(window).on("load",full_page);
+	$(window).on("resize",full_page);
 	
 	/******************** 메인리스트 ********************/
 	/* 검색 포커스 인 */

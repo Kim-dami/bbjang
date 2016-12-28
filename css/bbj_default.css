@@ -85,6 +85,7 @@ td,th {padding:0;}
           */
 #wrap {position:relative; top:0; left:0; right:0; width:100%; height:auto;}
 .pd_50 {padding-bottom:50px;}
+.full_page{width:100%;}
 
 #header {position:relative; z-index:1000; top:0; left:0; right:0; display:block width:100%;}
 .ht_50{height:50px;}
