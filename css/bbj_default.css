@@ -102,11 +102,13 @@ td,th {padding:0;}
 .content_list{position:relative; width:100%; height:auto;}
 .list_card{position:relative; width:calc(100% - 5px); height:auto; margin:0 auto; box-shadow:1px 3px 5px #d7d7d7;}
 
+/* 사진터치 구분 영역 */
 .list_card .list_photo_wrap{position:absolute; top:10px; left:8px; width:95px; height:70px; overflow:hidden;}
 .list_card .list_photo_wrap a{position:relative; display:block; width:100%; height:100%; overflow:hidden;}
 .list_card .list_photo_wrap .sold_out{background:url(../img01/list_sold_out.png) no-repeat center center; background-size:cover;}
 .list_card .list_photo_wrap img{position:relative; z-index:-1; width:100%; height:100%;}
 
+/* 리스트 정보 */
 .list_card .list_intro{position:relative; width:100%; height:auto;}
 .list_card .list_intro a{position:relative; display:block; width:100%; height:100%; padding:10px 8px 0 8px; box-sizing:border-box;}
 .list_card .list_intro a:active{background:rgba(0,0,0,0.05);}
@@ -123,6 +125,7 @@ td,th {padding:0;}
 .list_card .list_intro .bot_line .intro_time{width:60px; height:27px; line-height:27px; font-size:13px; color:#5b636b; float:left; text-align:center;}
 .list_card .list_intro .bot_line .intro_roca{width:auto; height:27px; line-height:27px; font-size:13px; color:#5b636b; float:left; padding-left:20px; background:url(../img01/ico_rocation.png) no-repeat 5px center; background-size:9px 11px;}
 
+/* 내글 버튼 */
 .list_card .my_line{width:100%; height:auto; border-top:1px solid #dfdfdf;}
 .list_card .my_line:after{content:""; display:block; clear:both;}
 .list_card .my_line div{width:33.3333%; height:30px; line-height:30px; background-color:#fcfcfc; border-right:1px solid #dfdfdf; box-sizing:border-box; float:left;}
