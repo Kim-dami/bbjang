@@ -18,7 +18,6 @@ $(document).ready(function(){
 		$(".full_page").css("height", full_height);
 	}
 	$(window).on("load",full_page);
-	$(window).on("resize",full_page);
 	
 	/******************** 메인리스트 ********************/
 	/* 검색 포커스 인 */
