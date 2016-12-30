@@ -65,11 +65,11 @@ td,th {padding:0;}
 /*
  ** 뱃지 **
           */
-.month_badge{display:inline-block; width:40px; height:15px; line-height:15px; font-size:12px; text-align:center; color:#fff; background-color:#33a381;}
-.rent_badge{display:inline-block; width:40px; height:15px; line-height:15px; font-size:12px; text-align:center; color:#fff; background-color:#92992a;}
-.sell_badge{display:inline-block; width:40px; height:15px; line-height:15px; font-size:12px; text-align:center; color:#fff; background-color:#257ba1;}
-.buy_badge{display:inline-block; width:40px; height:15px; line-height:15px; font-size:12px; text-align:center; color:#fff; background-color:#70369d;}
-.option_badge{display:inline-block; width:auto; height:15px; line-height:15px; font-size:12px; text-align:center; color:#fff; background-color:#8abbd3; border-radius:1px; padding:0 5px;}
+.month_badge{display:inline-block; width:40px; height:15px; line-height:16px; font-size:12px; text-align:center; color:#fff; background-color:#33a381; vertical-align:top;}
+.rent_badge{display:inline-block; width:40px; height:15px; line-height:16px; font-size:12px; text-align:center; color:#fff; background-color:#92992a; vertical-align:top;}
+.sell_badge{display:inline-block; width:40px; height:15px; line-height:16px; font-size:12px; text-align:center; color:#fff; background-color:#257ba1; vertical-align:top;}
+.buy_badge{display:inline-block; width:40px; height:15px; line-height:16px; font-size:12px; text-align:center; color:#fff; background-color:#70369d; vertical-align:top;}
+.option_badge{display:inline-block; width:auto; height:15px; line-height:16px; font-size:12px; text-align:center; color:#fff; background-color:#8abbd3; border-radius:1px; padding:0 5px; vertical-align:top;}
 
 /*
  ** 체크박스**
@@ -87,9 +87,13 @@ td,th {padding:0;}
 .pd_50 {padding-bottom:50px;}
 .full_page{width:100%;}
 
-#header {position:relative; z-index:1000; top:0; left:0; right:0; display:block width:100%;}
-.ht_50{height:50px;}
-.ht_45{height:45px;}
+#header {position:relative; z-index:1000; top:0; left:0; right:0; display:block; width:100%;}
+.ht_50 {height:50px;}
+.ht_45 {height:45px;}
+#header .btn_back{position:absolute; top:0; left:0; z-index:1; width:40px; height:100%;}
+#header .btn_back a{display:block; width:100%; height:100%; text-indent:-9999px; background:url(http://image.club5678.com/imgs/bbjang/img01/btn_back.png) no-repeat center center; background-size:17px 14px;}
+#header .btn_back a:active{background:rgba(0,0,0,0.05) url(http://image.club5678.com/imgs/bbjang/img01/btn_back.png) no-repeat center center; background-size:17px 14px;}
+#header .header_txt{position:relative; width:100%; height:100%; line-height:45px; padding-left:45px; box-sizing:border-box; color:#fff; font-size:19px;}
 
 #container {position:relative; z-index:700; top:0; left:0; right:0; width:100%; height:auto;}
 .hidden {display:none;}
@@ -113,7 +117,7 @@ td,th {padding:0;}
 .list_card .list_intro a{position:relative; display:block; width:100%; height:100%; padding:10px 8px 0 8px; box-sizing:border-box;}
 .list_card .list_intro a:active{background:rgba(0,0,0,0.05);}
 .list_card .list_intro .top_line{width:100%; height:15px; line-height:15px;}
-.list_card .list_intro .top_line .intro_price{display:inline-block; width:auto; height:15px; line-height:15px; margin-left:8px; font-size:15px; vertical-align:middle;}
+.list_card .list_intro .top_line .intro_price{display:inline-block; width:auto; height:15px; line-height:15px; margin-left:8px; font-size:15px;}
 .list_card .list_intro .top_line .comple_badge{position:absolute; top:10px; right:-3px; display:inline-block; width:60px; height:20px; line-height:20px; font-size:12px; letter-spacing:-0.5px; padding-left:8px; box-sizing:border-box; border-radius:25px 0 0 25px; color:#fff; background-color:#6cb5d9; border-bottom:1px solid #66abcd;}
 .list_card .list_intro .mid_line{width:100%; height:55px;}
 .list_card .list_intro .mid_line .intro_title{width:100%; height:23px; line-height:23px; font-size:15px; color:#596063; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
