@@ -59,6 +59,7 @@ td,th {padding:0;}
           */
 .bg_blue {background-color:#0ca2ed;}       /* 메인 블루 배경 */		  
 .bg_gray {background-color:#d9dddd;}       /* 메인 그레이 배경 */
+.bg_white {background-color:#fff;}        /* 메인 화이트 배경 */
 .ft_blue {color:#0b7fd0;}       /* 블루 텍스트 */
 .ft_navy {color:#004c80;}       /* 네이비 텍스트 */
 
