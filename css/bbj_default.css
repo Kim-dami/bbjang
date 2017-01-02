@@ -2,7 +2,7 @@
 /*
  ** 초기화 **
           */
-html {width:100%; height:100%; margin:0; padding:0; border:0; outline:0; background:transparent; font-size:14px; font-family:'bbj-Regular'; color:#4d5356; vertical-align:baseline; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;}
+html {width:100%; height:100%; margin:0; padding:0; border:0; outline:0; background:transparent; font-family:'bbj-Regular'; font-size:14px; letter-spacing:-0.5px; color:#4d5356; vertical-align:baseline; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;}
 body {width:100%; height:100%; margin:0; padding:0; line-height:1;}
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary {display:block;}
 audio,canvas,progress,video {display:inline-block; vertical-align:baseline;}
@@ -59,7 +59,7 @@ td,th {padding:0;}
           */
 .bg_blue {background-color:#0ca2ed;}       /* 메인 블루 배경 */		  
 .bg_gray {background-color:#d9dddd;}       /* 메인 그레이 배경 */
-.ft_blue {color:#0ca2ed;}       /* 블루 텍스트 */
+.ft_blue {color:#0b7fd0;}       /* 블루 텍스트 */
 .ft_navy {color:#004c80;}       /* 네이비 텍스트 */
 
 /*
@@ -118,7 +118,7 @@ td,th {padding:0;}
 .list_card .list_intro a:active{background:rgba(0,0,0,0.05);}
 .list_card .list_intro .top_line{width:100%; height:15px; line-height:15px;}
 .list_card .list_intro .top_line .intro_price{display:inline-block; width:auto; height:15px; line-height:15px; margin-left:8px; font-size:15px;}
-.list_card .list_intro .top_line .comple_badge{position:absolute; top:10px; right:-3px; display:inline-block; width:60px; height:20px; line-height:20px; font-size:12px; letter-spacing:-0.5px; padding-left:8px; box-sizing:border-box; border-radius:25px 0 0 25px; color:#fff; background-color:#6cb5d9; border-bottom:1px solid #66abcd;}
+.list_card .list_intro .top_line .comple_badge{position:absolute; top:10px; right:-3px; display:inline-block; width:60px; height:20px; line-height:20px; font-size:12px; padding-left:8px; box-sizing:border-box; border-radius:25px 0 0 25px; color:#fff; background-color:#6cb5d9; border-bottom:1px solid #66abcd;}
 .list_card .list_intro .mid_line{width:100%; height:55px;}
 .list_card .list_intro .mid_line .intro_title{width:100%; height:23px; line-height:23px; font-size:15px; color:#596063; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
 .list_card .list_intro .mid_line .intro_txt{display:-webkit-box; width:100%; line-height:16px; font-size:14px; overflow:hidden; text-overflow:ellipsis; word-wrap:break-word; -webkit-box-orient:vertical; -webkit-line-clamp:2;}

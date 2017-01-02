@@ -1,3 +1,122 @@
 @charset "utf-8";
-/* CSS Document */
-#header .btn_report{position:absolute; top:0; right:0;}
+#header .btn_report{position:absolute; top:7px; right:5px;; width:90px; height:31px; line-height:31px; border-radius:3px; background-color:#fff;}
+#header .btn_report a{display:block; width:100%; height:100%; text-align:center;}
+#header .btn_report a:active{background:rgba(0,0,0,0.05);}
+
+/* 상세페이지 사진 */
+.dt_photo_wrap{position:relative; width:100%; height:225px; background-color:#ccc;}
+.dt_photo_wrap .dt_photo{position:relative; width:100%; height:100%;}
+.dt_photo_wrap .dt_photo a{display:block; width:100%; height:100%; background:url(../img01/photo03.jpg) no-repeat center center; background-size:cover;}
+.dt_photo_wrap .dt_photo_frac{position:absolute; top:10px; right:10px; width:50px; height:22px; line-height:22px; background:rgba(154,154,154,0.7); border-radius:25px; color:#fff; text-align:center; font-size:13px;}
+.dt_photo_wrap .dt_btn_pre{position:absolute; top:95px; left:0; width:35px; height:35px; background:url(../img01/btn_photo_pre.png) no-repeat center center; background-size:17px 26px;}
+.dt_photo_wrap .dt_btn_next{position:absolute; top:95px; right:0; width:35px; height:35px; background:url(../img01/btn_photo_next.png) no-repeat center center; background-size:17px 26px;}
+.dt_photo_wrap .dt_btn_pre a, .dt_photo_wrap .dt_btn_next a{display:block; width:100%; height:100%; text-indent:-9999px;}
+
+/* 상세페이지 정보 */
+.dt_info_wrap{position:relative; width:100%; height:auto; padding:7px; box-sizing:border-box;}
+.dt_info_wrap .dt_title{width:100%; height:25px; line-height:25px; padding-bottom:7px;}
+.dt_info_wrap .dt_scrap{width:30px; height:100%; float:left; background:url(../img01/btn_scrap_off.png) no-repeat left center; background-size:23px 22px; transform:scale(1); -webkit-transform:scale(1); -ms-transform:scale(1); -moz-transform:scale(1); -o-transform:scale(1);}
+.dt_info_wrap .dt_scrap a{display:block; width:100%; height:100%; text-indent:-9999px;}
+@keyframes push {
+	50% {transform:scale(0.6);}
+	100% {transform:scale(1);}
+}
+@-webkit-keyframes push {
+	50% { -webkit-transform:scale(0.6); }
+	100% { -webkit-transform:scale(1); }
+}
+@-ms-keyframes push {
+	50% { -ms-transform:scale(0.6); }
+	100% { -ms-transform:scale(1); }
+}
+@-moz-keyframes push {
+	50% { -moz-transform:scale(0.6); }
+	100% { -moz-transform:scale(1); }
+}
+@-o-keyframes push {
+	50% { -o-transform:scale(0.6); }
+	100% { -o-transform:scale(1); }
+}
+.dt_info_wrap .dt_scrap_on{animation:push 0.2s ease-in-out 1; -webkit-animation:push 0.2s ease-in-out 1; -ms-animation:push 0.2s ease-in-out 1; -moz-animation:push 0.2s ease-in-out 1; -o-animation:push 0.2s ease-in-out 1; background:url(../img01/btn_scrap_on.png) no-repeat left center; background-size:23px 22px;}
+.dt_info_wrap h2{width:calc(100% - 40xp); height:100%; float:left; font-size:19px; font-weight:normal;}
+.dt_info_wrap .dt_price{width:100%; height:20px;}
+.dt_info_wrap .dt_price .month_badge, .dt_info_wrap .dt_price .rent_badge, .dt_info_wrap .dt_price .sell_badge, .dt_info_wrap .dt_price .buy_badge{height:20px; line-height:21px; font-size:15px;}
+.dt_info_wrap .dt_price .ft_blue{display:inline-block; width:auto; height:20px; line-height:21px; font-size:19px; margin-left:5px;}
+.dt_info_wrap .dt_shar{position:absolute; bottom:7px; right:7px; width:70px; height:auto;}
+.dt_info_wrap .dt_shar:after{content:""; display:block; clear:both;}
+.dt_info_wrap .dt_shar .shar_kko, .dt_info_wrap .dt_shar .shar_sms{width:30px; height:30px; border:1px solid #dadada; border-radius:3px;}
+.dt_info_wrap .dt_shar .shar_kko{float:left; background:#fff url(../img01/ico_kko.png) no-repeat center center; background-size:28px 26px;}
+.dt_info_wrap .dt_shar .shar_sms{float:right; background:#fff url(../img01/ico_sms.png) no-repeat center center; background-size:27px 26px;}
+.dt_info_wrap .dt_shar .shar_kko a, .dt_info_wrap .dt_shar .shar_sms a{display:block; width:100%; height:100%; text-indent:-9999px;}
+.dt_info_wrap .dt_shar .shar_kko a:active, .dt_info_wrap .dt_shar .shar_sms a:active{background:rgba(0,0,0,0.05);}
+
+/* 상세페이지 내용 */
+#container ul{position:relative; width:100%; height:auto;}
+#container .dt_list{position:relative; width:100%; height:auto;}
+
+#container .dt_list p{position:relative; width:100%; height:30px; line-height:30px; padding:0 7px; box-sizing:border-box; background-color:#fcfcfc; border-top:1px solid #c1c1c1; border-bottom:2px solid #c1c1c1;}
+#container .dt_list p .dt_time{float:right; font-size:13px; color:#848484;}
+
+/* 매물등록정보 */
+#container .dt_list .dt_sell{position:relative; width:100%; height:auto; padding:7px; box-sizing:border-box;}
+#container .dt_list .dt_sell li{width:100%; height:auto; padding-bottom:5px;}
+#container .dt_list .dt_sell li:after{content:""; display:block; clear:both;}
+#container .dt_list .dt_sell li:last-of-type{padding-bottom:0;}
+#container .dt_list .dt_sell .dt_l{width:65px; height:100%;; float:left; font-size:14px; line-height:20px;}
+#container .dt_list .dt_sell .dt_r{width:calc(100% - 65px); height:auto; float:right; font-size:16px; line-height:20px;}
+#container .dt_list .dt_sell .unit_conver{display:inline-block; width:70px; height:20px; margin-left:5px; border:1px solid #484b4d; border-radius:3px; box-sizing:border-box; background-color:#545759; color:#f5f5f5; text-align:center; font-size:13px;}
+#container .dt_list .dt_sell .unit_active{color:#83c5f7; font-weight:bold;}
+
+#container .dt_list .dt_intro{position:relative; width:100%; height:auto; padding:7px; border-top:1px solid #e8e8e8; box-sizing:border-box; font-size:14px; line-height:20px;} 
+
+/* 주소/위치 */
+#container .dt_list .dt_address{position:relative; width:100%; height:auto; padding:7px; box-sizing:border-box;}
+#container .dt_list .dt_address li{width:100%; height:auto; padding-bottom:5px;}
+#container .dt_list .dt_address li:after{content:""; display:block; clear:both;}
+#container .dt_list .dt_address li:last-of-type{padding-bottom:0;}
+#container .dt_list .dt_address .dt_l{width:45px; height:20px; line-height:20px; float:left; background-color:#e1e1e1; text-align:center; font-size:13px;}
+#container .dt_list .dt_address .dt_r{width:calc(100% - 55px); height:100%; line-height:20px; float:right; font-size:15px;}
+#container .dt_list .dt_address .dt_map_wrap{position:relative; width:100%; height:170px; border:1px solid #d2d7d9; border-radius:3px;}
+
+/* 옵션정보 */
+#container .dt_list .dt_option{position:relative; width:100%; height:auto; padding:7px 7px 2px 7px; box-sizing:border-box;}
+#container .dt_list .dt_option_badge{display:inline-block; width:auto; height:22px; line-height:22px; font-size:15px; color:#fff; background-color:#65aedb; padding:0 7px; border-radius:3px; margin-right:3px; margin-bottom:5px;}
+#container .dt_list .dt_option_badge:last-of-type{margin-right:0;}
+
+/* 등록자정보(로그인 전) */
+#container .dt_list .agent_login{display:none; position:relative; width:100%; height:auto; line-height:30px; padding:20px 0; box-sizing:border-box; text-align:center; color:#949494;}
+#container .dt_list .agent_login .btn_login{width:80px; height:30px; margin:0 auto; border:1px solid #b8bcbe; box-sizing:border-box; background-color:#f8f8f8;}
+#container .dt_list .agent_login .btn_login a{display:block; width:100%; height:100%; color:#4d5356; text-align:center;}
+#container .dt_list .agent_login .btn_login a:active{background:rgba(0,0,0,0.05);}
+
+/* 등록자정보(비공개 설정) */
+#container .dt_list .agent_closed{display:none; position:relative; width:100%; height:100px; line-height:100px; text-align:center; color:#949494;}
+
+/* 등록자정보 */
+#container .dt_list .agent_info{position:relative; width:100%; height:auto; border-bottom:1px solid #d9d9d9; margin-bottom:3px;}
+#container .dt_list .agent_info:after{content:""; display:block; clear:both;}
+#container .dt_list .agent_photo{width:auto; height:auto; padding:7px 7px 7px 14px; box-sizing:border-box; float:left;}
+#container .dt_list .photo_clip{width:50px; height:50px; border:2px solid #e3e5e5; border-radius:100%; background:url(../img01/img_my_default.png) no-repeat center center; background-size:cover; overflow:hidden;}
+#container .dt_list .photo_clip img{display:none; width:100%; height:100%;}
+
+#container .dt_list .agent_txt{width:calc(100% - 175px); height:68px; padding:14px 0; box-sizing:border-box; float:left;}
+#container .dt_list .agent_txt span{display:block; width:100%; height:20px; line-height:20px;}
+#container .dt_list .agent_txt .agent_name{font-size:19px;}
+#container .dt_list .agent_txt .agent_num{font-size:15px;}
+
+#container .dt_list .agent_more{width:100px; height:68px; border-left:1px solid #e8e8e8; box-sizing:border-box; float:left;}
+#container .dt_list .agent_more a{display:block; width:100%; height:100%; line-height:18px; text-align:center; padding:16px 0; box-sizing:border-box;}
+#container .dt_list .agent_more .font_b{display:inline-block; border-bottom:1px solid #4d5356;}
+
+#container .dt_list .agent_add{width:100%; height:auto; padding:7px; border-top:1px solid #d9d9d9; box-sizing:border-box; clear:both;}
+#container .dt_list .agent_add .add_title{width:100%; height:18px; line-height:18px; color:#858585;}
+#container .dt_list .agent_add .add_num{width:100%; height:auto; line-height:18px; color:#b3b3b3; font-size:11px; vertical-align:middle;}
+#container .dt_list .agent_add .add_num span{color:#666b6e; font-size:14px;}
+
+/* 연락 버튼 */
+.dt_bot_wrap{position:fixed; left:0; right:0; bottom:0; z-index:800; width:100%; height:45px; line-height:45px; background-color:#0475b3;}
+.dt_bot_wrap .dt_bot_btn{width:25%; height:100%; border-right:1px solid #68889e; box-sizing:border-box; float:left; color:#f3f3f3;}
+.dt_bot_wrap .dt_bot_btn:last-of-type{border-right:none;}
+.dt_bot_wrap .dt_bot_btn a{display:block; width:100%; height:100%; font-size:17px; text-align:center;}
+.dt_bot_wrap .dt_bot_btn a:active{background:rgba(0,0,0,0.1);}
+.dt_bot_wrap .dt_disable{background-color:#68889e; color:#95aaba;}

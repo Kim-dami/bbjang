@@ -30,20 +30,9 @@
     <!-- // 메인 헤더 -->
     <!-- 상세페이지 사진 -->
     <div class="dt_photo_wrap">
-    	<ul class="dt_photo">
-        	<li>
-            	<a href="#"><img src="img01/photo03.jpg"></a>
-            </li>
-        	<li>
-            	<a href="#"><img src="img01/photo04.jpg"></a>
-            </li>
-            <li>
-            	<a href="#"><img src="img01/photo03.jpg"></a>
-            </li>
-        	<li>
-            	<a href="#"><img src="img01/photo04.jpg"></a>
-            </li>
-    	</ul>
+    	<div class="dt_photo">
+        	<a href="#"></a>
+    	</div>
         <div class="dt_photo_frac">
         	1 / 20
         </div>
@@ -59,11 +48,12 @@
     <div class="dt_info_wrap">
     	<div class="dt_title">
         	<div class="dt_scrap">
+            	<a href="#">스크랩</a>
             </div>
             <h2><span class="font_b">용봉동121-1</span> 외 2건</h2>
         </div>
         <div class="dt_price">
-        	<span class="month_badge">월세</span> <span class="ft_blue">5,000만 / 50만</span>
+        	<span class="month_badge">월세</span><span class="ft_blue">5,000만 / 50만</span>
         </div>
         <div class="dt_shar">
         	<div class="shar_kko">
@@ -75,13 +65,14 @@
         </div>
     </div>
     <!-- // 상세페이지 정보 -->
-    <div id="container" class="pd_45">
+    <div id="container" class="pd_50">
     	<ul>
         	<li class="dt_list">
-            	<p class="font_b">매물등록정보<span class="dt_time font_t">2016.12.23 12:30</span></p>
+            	<p class="font_b">매물등록정보<span class="dt_time font_r">2016.12.23 12:30</span></p>
+                <!-- 매물등록정보 -->
                 <ul class="dt_sell">
                 	<li>
-                    	<div class="dt_l">매물명</div>
+                    	<div class="dt_l font_b">매물명</div>
                         <div class="dt_r ft_navy">
                         	용봉동 121-1<br />
                         	용봉동 121-2<br />
@@ -89,19 +80,20 @@
                         </div>
                     </li>
                     <li>
-                    	<div class="dt_l">종류/유헝</div>
-                        <div class="dt_r ft_navy" font_b>아파트/월세</div>
+                    	<div class="dt_l font_b">종류/유헝</div>
+                        <div class="dt_r ft_navy font_b">아파트/월세</div>
                     </li>
                     <li>
-                    	<div class="dt_l">종류/유헝</div>
+                    	<div class="dt_l font_b">면적</div>
                         <div class="dt_r">
-                        	<span class="ft_navy font_b">168</span> <span class="ft_navy">m<sup>2</sup></span>
+                        	<span class="ft_navy font_b">168</span><span class="ft_navy">m<sup>2</sup></span>
                             <div class="unit_conver">
-                            	<a href="#">미터제곱과 평수 단위 변환</a>
+                            	<a href="#"><span class="unit_active">m<sup>2</sup></span> ↔ <span>평수</span></a>
                             </div>
                         </div>
                     </li>
                 </ul>
+                <!-- // 매물등록정보 -->
                 <div class="dt_intro">
                 	전남대 기숙사 앞 올리모델링 완료, 즉시입주 가능<br />
                     11층입니다.<br />
@@ -111,78 +103,93 @@
             </li>
             <li class="dt_list">
             	<p class="font_b">주소/위치</p>
+                <!-- 주소/위치 -->
                 <ul class="dt_address">
                 	<li>
                     	<div class="dt_l">도로명</div>
-                        <div class="dt_r ft_navy" font_b>광주광역시 북구 비엔날레로 82번길41, 용봉아이파크아파트 101동 1004호</div>
+                        <div class="dt_r ft_blue">광주광역시 북구 비엔날레로 82번길41,<br /> 용봉아이파크아파트 101동 1004호</div>
                     </li>
                     <li>
                     	<div class="dt_l">지번</div>
-                        <div class="dt_r ft_navy" font_b>광주광역시 북구 용봉동 1465번지 용봉아이파크아파트 101동 1004호</div>
+                        <div class="dt_r ft_blue">광주광역시 북구 용봉동 1465번지<br /> 용봉아이파크아파트 101동 1004호</div>
+                    </li>
+                    <li>
+                    	<!-- 다음 지도 -->
+                        <div class="dt_map_wrap">
+                            <div id="map">
+                        </div>
+                        <!-- // 다음 지도 -->
                     </li>
                 </ul>
-                <!-- 다음 지도 -->
-				<div class="dt_map_wrap">
-					<div id="map" style="">
-                </div>
-                <!-- // 다음 지도 -->
+                <!-- // 주소/위치 -->
             </li>
             <li class="dt_list">
             	<p class="font_b">옵션정보</p>
-                <div>
-                	<span class="option_badge">에어컨</span>
-                    <span class="option_badge">침대</span>
-                    <span class="option_badge">무선인터넷</span>
-                    <span class="option_badge">TV</span>
-                    <span class="option_badge">신발장</span>
-                    <span class="option_badge">전자레인지</span>
-                    <span class="option_badge">인덕션</span>
+                <!-- 옵션정보 -->
+                <div class="dt_option">
+                	<span class="dt_option_badge">에어컨</span>
+                    <span class="dt_option_badge">침대</span>
+                    <span class="dt_option_badge">무선인터넷</span>
+                    <span class="dt_option_badge">TV</span>
+                    <span class="dt_option_badge">신발장</span>
+                    <span class="dt_option_badge">전자레인지</span>
+                    <span class="dt_option_badge">인덕션</span>
                 </div>
+                <!-- // 옵션정보 -->
             </li>
             <li class="dt_list">
             	<p class="font_b">등록자정보</p>
+                <!-- 등록자정보(로그인 전) -->
                 <div class="agent_login">
                 	로그인하시면 등록자 정보를 확인하실 수 있습니다.
                     <div class="btn_login">
                     	<a href="#">로그인하기</a>
                     </div>
                 </div>
+                <!-- // 등록자정보(로그인 전) -->
+                <!-- 등록자정보(비공개 설정) -->
                 <div class="agent_closed">
                 	등록자정보가 <span class="font_b">비공개</span>로 설정중입니다.
                 </div>
+                <!-- // 등록자정보(비공개 설정) -->
+                <!-- 등록자정보 -->
                 <div class="agent_info">
-                	<div class="photo_clip">
-                    	<img src="img01/photo02.jpg" alt="방사장">
+                	<div class="agent_photo">
+                        <div class="photo_clip">
+                            <img src="img01/photo02.jpg" alt="방사장">
+                        </div>
                     </div>
                     <div class="agent_txt">
-                    	<span class="font_t">방대리</span>
-                        <span class="font_b">010-1234-5678</span>
+                    	<span class="font_t agent_name">방대리</span>
+                        <span class="font_b agent_num">010-1234-5678</span>
                     </div>
                     <div class="agent_more">
                     	<a href="#">
                         	등록자 매물<br />
-                            <span class="font_b">더보기</span>
+                            <span class="font_b">더보기 ></span>
                         </a>
                     </div>
                     <div class="agent_add">
-                    	<p>추가연락처</p>
-                        <ul>
-                        	<li class="add_number">062-123-4567</li>
-                            <li class="add_number">062-345-6789</li>
-                            <li class="add_number">062-123-4567</li>
-                            <li class="add_number">062-345-6789</li>
-                            <li class="add_number">010-2345-6789</li>
-                        </ul>
+                    	<div class="add_title">추가연락처</div>
+                        <div class="add_num">
+                        	<span>062-123-4567</span> │ 
+                            <span>062-345-6789</span> │ 
+                            <span>062-123-4567</span> │ 
+                            <span>062-345-6789</span> │ 
+                            <span>010-2345-6789</span>
+                    	</div>
                     </div>
                 </div>
+                <!-- // 등록자정보 -->
             </li>
         </ul>
     </div>
+    <!-- 연락 버튼 -->
     <div class="dt_bot_wrap">
     	<div class="dt_bot_btn">
         	<a href="#">채팅상담</a>
         </div>
-        <div class="dt_bot_btn">
+        <div class="dt_bot_btn dt_disable">
         	<a href="#">무료영상</a>
         </div>
         <div class="dt_bot_btn">
@@ -192,6 +199,7 @@
         	<a href="#">문자</a>
         </div>
     </div>
+    <!-- // 연락 버튼 -->
 </div>
 </body>
 </html>
