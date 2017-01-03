@@ -75,16 +75,22 @@ td,th {padding:0;}
 /*
  ** 체크박스**
              */
-/* 기본 체크박스(파란배경 하얀체크) */
+/* 기본 체크박스(회색배경 > 파란배경 하얀체크) */
 .chk_wrap {position:relative;}
-.chk_wrap .chk_input {position:absolute; z-index:1; display:block; width:100%; height:100%; opacity:0;}
+.chk_wrap .chk_input {position:absolute; z-index:1; top:0; left:0; display:block; width:100%; height:100%; opacity:0;}
 .chk_wrap .chk_lb {position:relative; display:inline-block; width:auto; height:22px; line-height:22px; padding-left:30px; background:url(http://image.club5678.com/imgs/bbjang/img01/btn_chk_off.png) no-repeat left center; background-size:22px 22px; vertical-align:middle;}
 .chk_wrap .chk_input:checked ~ .chk_lb {position:relative; display:inline-block; width:auto; height:22px; line-height:22px; padding-left:30px; background:url(http://image.club5678.com/imgs/bbjang/img01/btn_chk_on.png) no-repeat left center; background-size:22px 22px; vertical-align:middle;}
+
+/* 기본 체크박스(하얀배경 > 파란배경 하얀체크) */
+.chk_wrap02 {position:relative;}
+.chk_wrap02 .chk_input02 {position:absolute; z-index:1; top:0; left:0; display:block; width:100%; height:100%; opacity:0;}
+.chk_wrap02 .chk_lb02 {position:relative; display:block; width:auto; height:14px; line-height:14px; padding-left:20px; background:url(http://image.club5678.com/imgs/bbjang/img01/btn_chk02_off.png) no-repeat left center; background-size:14px 14px; vertical-align:middle;}
+.chk_wrap02 .chk_input02:checked ~ .chk_lb02 {position:relative; display:inline-block; width:auto; height:14px; line-height:14px; padding-left:20px; background:url(http://image.club5678.com/imgs/bbjang/img01/btn_chk02_on.png) no-repeat left center; background-size:14px 14px; vertical-align:middle;}
 
 /*
  ** 방부장 기본 css **
           */
-#wrap {position:relative; top:0; left:0; right:0; width:100%; height:auto;}
+#wrap {position:relative; top:0; left:0; right:0; width:100%; height:auto; overflow-x:hidden;}
 .pd_50 {padding-bottom:50px;}
 .full_page{width:100%;}
 
@@ -117,16 +123,17 @@ td,th {padding:0;}
 .list_card .list_intro{position:relative; width:100%; height:auto;}
 .list_card .list_intro a{position:relative; display:block; width:100%; height:100%; padding:10px 8px 0 8px; box-sizing:border-box;}
 .list_card .list_intro a:active{background:rgba(0,0,0,0.05);}
-.list_card .list_intro .top_line{width:100%; height:15px; line-height:15px;}
-.list_card .list_intro .top_line .intro_price{display:inline-block; width:auto; height:15px; line-height:15px; margin-left:8px; font-size:15px;}
+.list_card .list_intro .top_line{width:100%; height:15px; line-height:15px; overflow:hidden; white-space:nowrap; text-overflow: ellipsis;}
+.list_card .list_intro .top_line .intro_price{margin-left:8px; font-size:15px;}
 .list_card .list_intro .top_line .comple_badge{position:absolute; top:10px; right:-3px; display:inline-block; width:60px; height:20px; line-height:20px; font-size:12px; padding-left:8px; box-sizing:border-box; border-radius:25px 0 0 25px; color:#fff; background-color:#6cb5d9; border-bottom:1px solid #66abcd;}
+.list_card .list_intro .comple_pr{padding-right:50px; box-sizing:border-box;} /* 거래완료뱃지가 있을 경우 top_line에 클래스 추가 */
 .list_card .list_intro .mid_line{width:100%; height:55px;}
 .list_card .list_intro .mid_line .intro_title{width:100%; height:23px; line-height:23px; font-size:15px; color:#596063; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
 .list_card .list_intro .mid_line .intro_txt{display:-webkit-box; width:100%; line-height:16px; font-size:14px; overflow:hidden; text-overflow:ellipsis; word-wrap:break-word; -webkit-box-orient:vertical; -webkit-line-clamp:2;}
-.list_card .list_intro .photo_pl{padding-left:105px; box-sizing:border-box;}
+.list_card .list_intro .photo_pl{padding-left:105px; box-sizing:border-box;} /* 사진이 있을 경우 top_line과 mid_line에 클래스 추가 */
 .list_card .list_intro .bot_line{width:100%; height:auto;}
 .list_card .list_intro .bot_line:after{content:""; display:block; clear:both;}
-.list_card .list_intro .bot_line .intro_option{width:100%; height:15px; clear:both; padding-top:5px;}
+.list_card .list_intro .bot_line .intro_option{width:100%; height:15px; clear:both; padding-top:5px; overflow:hidden;}
 .list_card .list_intro .bot_line .intro_time{width:60px; height:27px; line-height:27px; font-size:13px; color:#5b636b; float:left; text-align:center;}
 .list_card .list_intro .bot_line .intro_roca{width:auto; height:27px; line-height:27px; font-size:13px; color:#5b636b; float:left; padding-left:20px; background:url(http://image.club5678.com/imgs/bbjang/img01/ico_rocation.png) no-repeat 5px center; background-size:9px 11px;}
 
