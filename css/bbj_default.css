@@ -29,6 +29,7 @@ dl, menu, ol, ul {margin:0; padding:0;}
 ol,ul,li {list-style:none;}
 nav ul, nav ol {list-style:none; list-style-image:none;}
 button, input, select, textarea {margin:0; font-size:1em; vertical-align:middle; font-family:'bbj-Regular'; appearance:none; -webkit-appearance:none; -ms-appearance:none; -moz-appearance:none; -o-appearance:none; -webkit-tap-highlight-color:rgba(255, 255, 255, 0);}
+input::-ms-clear {display: none;}
 select::-ms-expand {display:none;}
 button {overflow:visible; -webkit-tap-highlight-color:rgba(255, 255, 255, 0);}
 button,select {text-transform:none;}
@@ -90,7 +91,7 @@ td,th {padding:0;}
 /*
  ** 방부장 기본 css **
           */
-#wrap {position:relative; top:0; left:0; right:0; width:100%; height:auto; overflow-x:hidden;}
+#wrap {position:relative; top:0; left:0; right:0; width:100%; height:auto;}
 .pd_50 {padding-bottom:50px;}
 .full_page{width:100%;}
 
