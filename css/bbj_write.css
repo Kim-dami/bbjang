@@ -94,7 +94,7 @@
 
 .wt_info_wrap .wt_hope_loca .wt_l{width:80px; height:32px; line-height:32px; float:left;}
 .wt_info_wrap .wt_hope_loca .wt_r{width:calc(100% - 80px); height:32px; line-height:32px; float:right;}
-.wt_info_wrap .wt_hope_loca .wt_r .wt_slct_30{width:calc(30% - 9px); height:30px; line-height:30px; padding:0 5px; margin-left:5px; border:1px solid #dce0e1; border-radius:3px; background:#f5f7f7 url(http://image.club5678.com/imgs/bbjang/img01/ico_slct_drop03.png) no-repeat 96% center; background-size:7px 4px; float:left;}
+.wt_info_wrap .wt_hope_loca .wt_r .wt_slct_30{width:calc(30% - 10px); height:30px; line-height:30px; padding:0 5px; margin-left:5px; border:1px solid #dce0e1; border-radius:3px; background:#f5f7f7 url(http://image.club5678.com/imgs/bbjang/img01/ico_slct_drop03.png) no-repeat 96% center; background-size:7px 4px; float:left;}
 .wt_info_wrap .wt_hope_loca .wt_r .wt_slct_30 select{display:block; width:100%; line-height:14px; font-size:14px; padding:8px 0; border:none; outline:none; background-color:transparent; color:#4d5356;}
 
 .wt_info_wrap .wt_slct_50{width:45%; height:30px; line-height:30px; padding:0 5px; border:1px solid #dce0e1; border-radius:3px; background:#f5f7f7 url(http://image.club5678.com/imgs/bbjang/img01/ico_slct_drop03.png) no-repeat 96% center; background-size:7px 4px;}
@@ -137,7 +137,7 @@
 /* 옵션정보 */
 .wt_opc_title{background:url(http://image.club5678.com/imgs/bbjang/img01/ico_opc_title.png) no-repeat 8px 4px; background-size:22px 23px;}
 
-.wt_opc{position:relative; width:100%; height:auto; line-height:20px; padding:7px; box-sizing:border-box; text-align:center; color:#0b7fd0; font-size:15px;}
+.wt_opc{position:relative; width:100%; height:auto; line-height:20px; padding:7px; box-sizing:border-box; text-align:left; color:#0b7fd0; font-size:15px;}
 
 /* 상세설명 */
 .wt_expl_title{background:url(http://image.club5678.com/imgs/bbjang/img01/ico_expl_title.png) no-repeat 8px 4px; background-size:22px 23px;}

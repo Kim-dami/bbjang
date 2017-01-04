@@ -7,6 +7,7 @@
 .dt_photo_wrap{position:relative; width:100%; height:225px; background-color:#ccc;}
 .dt_photo_wrap .dt_photo{position:relative; width:100%; height:100%;}
 .dt_photo_wrap .dt_photo a{display:block; width:100%; height:100%; background:url(http://image.club5678.com/imgs/bbjang/img01/photo03.jpg) no-repeat center center; background-size:cover;}
+.dt_photo_wrap .dt_water_mk{position:absolute; top:50%; left:50%; width:80px; height:80px; margin-top:-40px; margin-left:-40px; background:url(http://image.club5678.com/imgs/bbjang/img01/img_water_mk.png) no-repeat center center; background-size:73px 75px; text-indent:-9999px;}
 .dt_photo_wrap .dt_photo_frac{position:absolute; top:10px; right:10px; width:50px; height:22px; line-height:22px; background:rgba(154,154,154,0.7); border-radius:25px; color:#fff; text-align:center; font-size:13px;}
 .dt_photo_wrap .dt_buy_photo{background:#dadee2 url(http://image.club5678.com/imgs/bbjang/img01/bg_detail_buy.png) no-repeat center center; background-size:319px 225px; text-indent:-9999px;}
 .dt_photo_wrap .dt_btn_pre{position:absolute; top:95px; left:0; width:35px; height:35px; background:url(http://image.club5678.com/imgs/bbjang/img01/btn_photo_pre.png) no-repeat center center; background-size:17px 26px;}
@@ -111,6 +112,7 @@
 
 #container .dt_list .agent_more{width:100px; height:75px; border-left:1px solid #e8e8e8; box-sizing:border-box; float:left;}
 #container .dt_list .agent_more a{display:block; width:100%; height:100%; line-height:18px; text-align:center; padding:18px 0; box-sizing:border-box;}
+#container .dt_list .agent_more a:active{background:rgba(0,0,0,0.05);}
 #container .dt_list .agent_more .font_b{display:inline-block; border-bottom:1px solid #4d5356;}
 
 #container .dt_list .agent_add{width:100%; height:auto; padding:7px; border-top:1px solid #d9d9d9; box-sizing:border-box; clear:both;}
@@ -138,3 +140,6 @@
 .dt_bot_wrap .dt_btn_del{display:none; width:100%; height:100%; color:#f3f3f3}
 .dt_bot_wrap .dt_btn_del a{display:block; width:100%; height:100%; font-size:16px; text-align:center;}
 .dt_bot_wrap .dt_btn_del a:active{background:rgba(0,0,0,0.1);}
+
+/* 거래완료 */
+.dt_sold_out{position:fixed; top:0; bottom:0; left:0; right:0; z-index:900; background:rgba(0,0,0,0.6) url(http://image.club5678.com/imgs/bbjang/img01/dt_sold_out.png) no-repeat center center; background-size:171px 98px;}
