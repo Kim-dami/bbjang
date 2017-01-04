@@ -50,7 +50,7 @@
                     <div class="wt_plus">
                     	<a href="#">올리기</a>
                     </div>
-                    <div class="wt_photo_default">
+                    <div class="wt_photo_default hidden">
             			올리기 버튼을 터치해주세요.
                     </div>
                     <div class="wt_photo_wrap">
@@ -80,13 +80,13 @@
                     </div>
                     <ul class="wt_build_wrap">
                     	<li class="wt_build">
-                        	<input type="text" placeholder="예)용봉동 어울림 아파트, 용봉동 꿈이룸 원룸" />
+                        	<input type="text" placeholder="예)용봉동 어울림 아파트, 용봉동 꿈이룸 원룸"  class="wt_wid_70"/>
                             <div class="wt_build_del">
                             	<a href="#">삭제</a>
                             </div>
                         </li>
                         <li class="wt_build">
-                        	<input type="text" placeholder="예)용봉동 어울림 아파트, 용봉동 꿈이룸 원룸" />
+                        	<input type="text" placeholder="예)용봉동 어울림 아파트, 용봉동 꿈이룸 원룸" class="wt_wid_70" />
                             <div class="wt_build_del">
                             	<a href="#">삭제</a>
                             </div>
@@ -163,7 +163,7 @@
                     <div class="wt_plus">
                     	<a href="#">주소검색</a>
                     </div>
-                    <div class="wt_default">
+                    <div class="wt_default hidden">
             			주소검색 버튼을 터치해주세요.
                     </div>
                     <ul class="wt_address">
@@ -196,7 +196,7 @@
                     <div class="wt_plus">
                     	<a href="#">옵션선택</a>
                     </div>
-                    <div class="wt_default">
+                    <div class="wt_default hidden">
             			옵션선택 버튼을 터치해주세요
                     </div>
                     <div class="wt_opc">
@@ -223,8 +223,8 @@
                 	<p class="wt_agent_title font_b">등록자정보</p>
                     <div class="wt_chk">
                         <div class="chk_wrap02">
-                            <input type="checkbox" class="chk_input02" id="chk_closed">
-                            <label for="chk_closed" class="chk_lb02">비공개</label>
+                            <input type="checkbox" class="chk_input02" id="chk_sell_closed">
+                            <label for="chk_sell_closed" class="chk_lb02">비공개</label>
                         </div>
                     </div>
                     <div class="wt_agent_num">
@@ -312,8 +312,221 @@
         </div>
         <!-- // 내놓기 -->
         <!-- 구하기 -->
-        <div class="content_wrap">
-        	
+        <div class="content_wrap hidden">
+        	<ul>
+            	<!-- 희망 매물명 -->
+                <li class="wt_list">
+                	<p class="wt_build_title font_b">희망매물명 <span class="font_r">(최대 20자)</span></p>
+                    <ul class="wt_build_wrap">
+                    	<li class="wt_build">
+                        	<input type="text" placeholder="예)용봉동 어울림 아파트, 용봉동 꿈이룸 원룸" class="wt_wid_10" />
+                        </li>
+                    </ul>
+                </li>
+                <!-- // 희망 매물명 -->
+                <!-- 기본정보 -->
+                <li class="wt_list">
+                	<p class="wt_info_title font_b">기본정보</p>
+                    <ul class="wt_info_wrap">
+                    	<li class="wt_hope_loca">
+                        	<div class="wt_l font_b">
+                            	희망위치
+                            </div>
+                            <div class="wt_r">
+                            	<div class="wt_slct_30">
+                                    <select>
+                                        <option>시/도</option>
+                                        <option>전체</option>
+                                        <option>서울</option>
+                                        <option>경기</option>
+                                        <option>인천</option>
+                                        <option>대전</option>
+                                        <option>대구</option>
+                                        <option>부산</option>
+                                        <option>광주</option>
+                                        <option>세종</option>
+                                        <option>울산</option>
+                                        <option>충북</option>
+                                        <option>충남</option>
+                                        <option>전북</option>
+                                        <option>전남</option>
+                                        <option>경북</option>
+                                        <option>경남</option>
+                                        <option>강원</option>
+                                        <option>제주</option>
+                                        <option>해외</option>
+                                    </select>
+                                </div>
+                            	<div class="wt_slct_30">
+                                    <select>
+                                        <option>시/군/구</option>
+                                        <option>광산구</option>
+                                        <option>남구</option>
+                                        <option>동구</option>
+                                        <option>북구</option>
+                                        <option>서구</option>    
+                                    </select>
+                                </div>
+                                <div class="wt_slct_30">
+                                    <select>
+                                        <option>읍/면/동</option>
+                                        <option>각화동</option>
+                                        <option>금곡동</option>
+                                        <option>누문동</option>
+                                        <option>대촌동</option>
+                                        <option>덕의동</option>
+                                        <option>동림동</option>
+                                        <option>두암동</option>
+                                        <option>망월동</option>
+                                        <option>매곡동</option>
+                                        <option>문흥동</option>    
+                                    </select>
+                                </div>
+                            </div>
+                        </li>
+                    	<li>
+                        	<div class="wt_slct_50">
+                            	<a href="#">매물종류</a>
+                            </div>
+                            <div class="wt_slct_50">
+                                <select>
+                                    <option>거래형태</option>
+                                    <option>매매</option>
+                                    <option>전세</option>
+                                    <option>월세</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li class="wt_rent_price">
+                        	<div class="wt_l font_b">
+                            	매매(전세,월세)가격
+                            </div>
+                            <div class="wt_r">
+                            	<div class="wt_num">
+                            		<input type="number" />
+                                </div> 만원
+                            </div>
+                        </li>
+                        <li class="wt_month_price">
+                        	<div class="wt_l font_b">
+                            	보증금/월세
+                            </div>
+                            <div class="wt_r">
+                            	<div class="wt_num">
+                            		<input type="number" />
+                                </div> 만원　
+                                <div class="wt_num">
+                                	<input type="number" />
+                                </div> 만원
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <!-- // 기본정보 -->
+                <!-- 상세설명 -->
+                <li class="wt_list">
+                	<p class="wt_expl_title font_b">상세설명 <span class="font_r">(<span class="ft_blue font_b">0</span>/500자)</span></p>
+                    <div class="wt_expl_txt">
+                    	<label for="area_expl">
+                        	가장 많이 보이는 리스트에 보여지는 내용입니다.<br />
+                            매물의 장점, 특징 등을 자세히 작성하시면 도움이 됩니다.<br />
+                            ※ 해당 매물과 관계없는 내용은 자동 비공개 처리됩니다.
+                        </label>
+            			<textarea name="text" cols="50" rows="4" id="area_expl"></textarea>
+                    </div>
+                </li>
+                <!-- // 상세설명 -->
+                <!-- 등록자정보 -->
+                <li class="wt_list">
+                	<p class="wt_agent_title font_b">등록자정보</p>
+                    <div class="wt_chk">
+                        <div class="chk_wrap02">
+                            <input type="checkbox" class="chk_input02" id="chk_buy_closed">
+                            <label for="chk_buy_closed" class="chk_lb02">비공개</label>
+                        </div>
+                    </div>
+                    <div class="wt_agent_num">
+            			<div class="wt_l font_b">휴대폰번호</div>
+                        <div class="wt_r font_b">010-1234-5678</div>
+                        <div class="wt_agent_btn">
+                        	<a href="#">변경</a>
+                        </div>
+                    </div>
+                    <div class="wt_add">
+            			<div class="wt_l font_b">추가연락처</div>
+                        <div class="wt_r">
+                        	<a href="#">추가하기</a>
+                        </div>
+                        <ul class="wt_add_u">
+                        	<li class="wt_add_l">
+                            	<div class="wt_add_num">
+                                    <select>
+                                        <option>010</option>
+                                        <option>02</option>
+                                        <option>031</option>
+                                        <option>032</option>
+                                        <option>033</option>
+                                        <option>041</option>
+                                        <option>042</option>
+                                        <option>043</option>
+                                        <option>051</option>
+                                        <option>052</option>
+                                        <option>053</option>
+                                        <option>054</option>
+                                        <option>055</option>
+                                        <option>061</option>
+                                        <option>062</option>
+                                        <option>063</option>
+                                        <option>064</option>
+                                    </select>
+                                </div> - 
+                                <div class="wt_add_num">
+                                    <input type="number" />
+                                </div> - 
+                                <div class="wt_add_num">
+                                    <input type="number" />
+                                </div>
+                                <div class="wt_agent_btn">
+                                    <a href="#">삭제</a>
+                                </div>
+                            </li>
+                            <li class="wt_add_l">
+                            	<div class="wt_add_num">
+                                    <select>
+                                        <option>010</option>
+                                        <option>02</option>
+                                        <option>031</option>
+                                        <option>032</option>
+                                        <option>033</option>
+                                        <option>041</option>
+                                        <option>042</option>
+                                        <option>043</option>
+                                        <option>051</option>
+                                        <option>052</option>
+                                        <option>053</option>
+                                        <option>054</option>
+                                        <option>055</option>
+                                        <option>061</option>
+                                        <option>062</option>
+                                        <option>063</option>
+                                        <option>064</option>
+                                    </select>
+                                </div> - 
+                                <div class="wt_add_num">
+                                    <input type="number" />
+                                </div> - 
+                                <div class="wt_add_num">
+                                    <input type="number" />
+                                </div>
+                                <div class="wt_agent_btn">
+                                    <a href="#">삭제</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <!-- // 등록자정보 -->
+            </ul>
         </div>
         <!-- // 구하기 -->
     </div>
