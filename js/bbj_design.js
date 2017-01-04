@@ -144,6 +144,15 @@ $(document).ready(function(){
 	});
 	
 	/******************** 매물등록페이지 ********************/
+	/* 네비 탭이동 */
+	$(".nav_wrap li").click(function(){
+		$(".nav_wrap li").removeClass("wt_nav_active");
+		$(".content_wrap").addClass("hidden");
+		var nav_idx = $(this).index(".nav_wrap li");
+		$(".nav_wrap li").eq(nav_idx).addClass("wt_nav_active");
+		$(".content_wrap").eq(nav_idx).removeClass("hidden");
+	});
+	
 	/* 이미지멀티선택페이지 셀렉트박스 가로값 설정*/
 	$(document).ready(function() {
  		$('.pic_album').change(function(){

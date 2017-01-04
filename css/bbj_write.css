@@ -1,5 +1,25 @@
 @charset "utf-8";
 /*--------------------------------------------------- 매물등록페이지 ---------------------------------------------------*/
+@keyframes push {
+	50% {transform:scale(0.9);}
+	100% {transform:scale(1);}
+}
+@-webkit-keyframes push {
+	50% { -webkit-transform:scale(0.9); }
+	100% { -webkit-transform:scale(1); }
+}
+@-ms-keyframes push {
+	50% { -ms-transform:scale(0.9); }
+	100% { -ms-transform:scale(1); }
+}
+@-moz-keyframes push {
+	50% { -moz-transform:scale(0.9); }
+	100% { -moz-transform:scale(1); }
+}
+@-o-keyframes push {
+	50% { -o-transform:scale(0.9); }
+	100% { -o-transform:scale(1); }
+}
 #header .btn_note{position:absolute; top:7px; right:5px;; width:90px; height:31px; line-height:31px; border-radius:3px; background-color:#fff;}
 #header .btn_note a{display:block; width:100%; height:100%; text-align:center;}
 #header .btn_note a:active{background:rgba(0,0,0,0.05);}
@@ -25,6 +45,7 @@
 
 .wt_plus{position:absolute; top:0; right:0; width:65px; height:32px; line-height:32px; border:1px solid #555c60; box-sizing:border-box; background-color:#5f676b;}
 .wt_plus a{display:block; width:100%; height:100%; color:#fff; text-align:center;}
+.wt_plus:active{animation:push 0.2s ease-in-out 1; -webkit-animation:push 0.2s ease-in-out 1; -ms-animation:push 0.2s ease-in-out 1; -moz-animation:push 0.2s ease-in-out 1; -o-animation:push 0.2s ease-in-out 1;}
 .wt_default{display:none; position:relative; width:100%; height:45px; line-height:45px; text-align:center; color:#9ea2a3;}
 .wt_num{display:inline-block; height:30px; line-height:30px; padding:0 5px; margin-right:3px; border:1px solid #dce0e1; border-radius:3px; background-color:#f5f7f7; vertical-align:middle;}
 .wt_num input[type="number"]{display:block; width:100%; height:14px; line-height:14px; font-size:14px; padding:8px 0; border:none; outline:none; background-color:transparent;}
@@ -49,6 +70,7 @@
 
 .wt_build_plus{width:calc(100% - 14px); height:30px; line-height:30px; margin:7px 7px 0 7px; border-radius:3px; background-color:#0ca2ed;}
 .wt_build_plus a{display:block; color:#fff; text-align:center;  font-size:15px;}
+.wt_build_plus a:active{background:rgba(0,0,0,0.05);}
 
 .wt_build_wrap{position:relative; width:100%; height:auto; padding:7px; box-sizing:border-box;}
 .wt_build_wrap .wt_build{position:relative; width:100%; height:auto; margin-bottom:7px;}
@@ -57,7 +79,9 @@
 .wt_build_wrap .wt_build input[type="text"]{display:block; height:14px; line-height:14px; font-size:14px; padding:8px 5px; border:1px solid #d2d7d9; border-radius:3px; background-color:#f5f7f7; outline:none; float:left;}
 .wt_build_wrap .wt_build .wt_wid_70{width:calc(100% - 70px);}
 .wt_build_wrap .wt_build .wt_wid_10{width:calc(100% - 10px);}
-.wt_build_wrap .wt_build .wt_build_del{width:50px; height:30px; line-height:30px; border:1px solid #0ca2ed; border-radius:3px; font-size:13px; text-align:center; float:right;}
+.wt_build_wrap .wt_build .wt_build_del{width:50px; height:30px; line-height:30px; border:1px solid #0ca2ed; border-radius:3px; float:right;}
+.wt_build_wrap .wt_build .wt_build_del a{display:block; font-size:13px; text-align:center;}
+.wt_build_wrap .wt_build .wt_build_del a:active{background-color:#0ca2ed; color:#fff;}
 
 /* 기본정보 */
 .wt_info_title{background:url(http://image.club5678.com/imgs/bbjang/img01/ico_info_title.png) no-repeat 8px 4px; background-size:22px 23px;}
@@ -94,6 +118,7 @@
 .wt_info_wrap .wt_area .wt_r .wt_is_unit{display:inline-block; width:calc(50% - 40px);}
 .wt_info_wrap .wt_area .wt_r .wt_unit_conver{display:inline-block; width:55px; height:32px; line-height:33px; margin:0 5px; border-radius:3px; background:#0ca2ed url(http://image.club5678.com/imgs/bbjang/img01/ico_unit_conver.png) no-repeat 85% center; background-size:8px 12px; vertical-align:middle;}
 .wt_info_wrap .wt_area .wt_r .wt_unit_conver a{display:block; width:100%; height:100%; padding-left:7px; box-sizing:border-box; color:#fff;}
+.wt_info_wrap .wt_area .wt_r .wt_unit_conver a:active{background:rgba(0,0,0,0.05);}
 
 /* 위치입력 */
 .wt_loca_title{background:url(http://image.club5678.com/imgs/bbjang/img01/ico_loca_title.png) no-repeat 8px 4px; background-size:22px 23px;}
@@ -132,12 +157,14 @@
 
 .wt_agent_btn{width:50px; height:30px; line-height:30px; border:1px solid #0ca2ed; border-radius:3px;; float:right;}
 .wt_agent_btn a{display:block; width:100%; height:100%; font-size:13px; text-align:center}
+.wt_agent_btn a:active{background-color:#0ca2ed; color:#fff;}
 
 .wt_add{width:calc(100% - 14px); height:auto; margin:0 7px; padding:7px 0;}
 .wt_add:after{content:""; display:block; clear:both;}
 .wt_add .wt_l{width:80px; height:32px; line-height:32px; float:left;}
 .wt_add .wt_r{width:calc(100% - 80px); height:32px; line-height:32px; float:right; border-radius:3px; background-color:#0ca2ed;}
 .wt_add .wt_r a{display:block; width:100%; height:100%; color:#fff; text-align:center; font-size:15px;}
+.wt_add .wt_r a:active{background:rgba(0,0,0,0.05);}
 .wt_add .wt_add_u{position:relative; width:100%; height:auto; clear:both;}
 .wt_add .wt_add_l{width:100%; height:auto; padding-top:7px;} 
 .wt_add .wt_add_l:after{content:""; display:block; clear:both;}
