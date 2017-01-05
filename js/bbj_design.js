@@ -97,23 +97,6 @@ $(document).ready(function(){
 	$(".btn_write a").mouseup(function(){
 		$($(this).find(".ripple")).removeClass("ripple_active");
 	});
-	
-	/******************** 로그인페이지 ********************/
-	/* 로그인페이지 라인 컬러 설정 */
-	$(".form_1 input").focusin(function(){
-		var this_form = $(this).closest(".form_1");
-		var this_line = $(this_form).find(".line");
-		var this_txt_erase = $(this_form).find(".txt_erase");
-		$(this_line).addClass("line_on");
-		$(this_txt_erase).addClass("txt_erase_on");
-	});
-	$(".form_1 input").focusout(function(){
-		var this_form = $(this).closest(".form_1");
-		var this_line = $(this_form).find(".line");
-		var this_txt_erase = $(this_form).find(".txt_erase");
-		$(this_line).removeClass("line_on");
-		$(this_txt_erase).removeClass("txt_erase_on");
-	});
 
 	/******************** 상세페이지 ********************/
 	/* 상세페이지 스크랩 버튼 */
@@ -138,15 +121,5 @@ $(document).ready(function(){
     		$(this).width($("#width_tmp_select").width());  
  		});
 	});
-	
-	/* 체크박스(이미지멀티선택페이지) */
-	$(".chk_pic").click(function(){
-		var chk_gallery = $(this).parents(".chk_gallery");
-		var chk_lb2 = $(chk_gallery).find(".chk_lb2");
-		if($(this).prop("checked")){
-			$(chk_lb2).css("background","url(http://image.club5678.com/imgs/bbjang/img01/chk_pic_on.png) no-repeat left center").css("background-size","24px 24px");
-		} else {
-			$(chk_lb2).css("background","url(http://image.club5678.com/imgs/bbjang/img01/chk_pic_off.png) no-repeat left center").css("background-size","24px 24px");
-		}
-	});
+
 });
