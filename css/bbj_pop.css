@@ -1,0 +1,40 @@
+@charset "utf-8";
+/*--------------------------------------------------- 팝업공통 ---------------------------------------------------*/
+/* 팝업 픽스 */
+#pop_wrap {position:fixed; top:0; bottom:0; left:0; right:0; z-index:999; width:100%; height:100%;}
+/* 팝업배경 */
+#pop_bg_modal {position:absolute; width:100%; height:100%; background:rgba(0,0,0,0.6);}
+/* 팝업 중앙 */
+#pop_container {position:fixed; top:50%; height:auto; overflow:hidden; border-radius:5px; background-color:#fff;}
+.wid_90 {left:5%; right:5%; width:90%;}
+.wid_96 {left:2%; right:2%; width:96%;}
+
+.mt_100 {margin-top:-100px;}
+.mt_180 {margin-top:-180px;}
+
+.shadow{box-shadow:1px 3px 5px #7c7c7c;}
+
+/*--------------------------------------------------- 허위매물 신고하기 ---------------------------------------------------*/
+/* 신고하기 헤더 */
+.pop_report_h{position:relative; width:100%; height:50px; line-height:50px;}
+.pop_report_h h2{position:relative; width:100%; height:100%; text-align:center; font-size:24px;}
+.pop_report_h h2 .bg_blue{position:absolute; bottom:0; left:0; display:block; width:100%; height:2px;}
+.pop_report_h .pop_btn_clse{position:absolute; top:0; right:0; width:40px; height:48px; background:url(http://image.club5678.com/imgs/bbjang/img01/btn_pop_x.png) no-repeat center center; background-size:20px 20px;}
+.pop_report_h .pop_btn_clse a{display:block; width:100%; height:100%; text-indent:-9999px;}
+.pop_report_h .pop_btn_clse a:active{background:rgba(0,0,0,0.05);}
+
+/* 신고하기 컨텐츠 */
+.pop_report_con{position:relative; width:100%; height:auto; padding:12px 17px; box-sizing:border-box;}
+.pop_report_con .pop_notice{width:100%; height:auto; line-height:20px; font-size:16px;}
+.pop_report_con .pop_warn{width:100%; height:auto; line-height:20px; padding:15px 0; color:#71777a; font-size:15px;}
+.pop_report_con .pop_warn p{width:100px; height:30px; line-height:31px; margin-bottom:7px; border-top:1px solid #4a4b4c; border-bottom:1px solid #4a4b4c; color:#323333; text-align:center; font-size:16px; letter-spacing:1px;}
+.pop_report_con .pop_rdo{width:100%; height:auto;}
+.pop_report_con .pop_rdo .rdo_wrap{padding-bottom:10px;}
+.pop_report_con .pop_rdo .rdo_wrap .rdo_lb{padding-left:27px; font-size:16px;}
+.pop_report_con .pop_rdo .rdo_wrap .rdo_input:checked ~ .rdo_lb {background:url(http://image.club5678.com/imgs/bbjang/img01/btn_rdo_on.png) no-repeat left center; background-size:23px 23px; color:#0b7fd0;}
+
+/* 신고하기 하단 */
+.pop_report_bot{position:relative; width:100%; height:auto;}
+.pop_report_bot .pop_btn_report{width:100%; height:50px; line-height:51px; background-color:#2ea5f0;}
+.pop_report_bot .pop_btn_report a{display:block; width:100%; height:100%; text-align:center; color:#fff; font-size:21px;}
+.pop_report_bot .pop_btn_report a:active{background:rgba(0,0,0,0.05);}
