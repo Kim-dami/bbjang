@@ -101,7 +101,9 @@ td,th {padding:0;}
 .pd_50 {padding-bottom:50px;}
 .full_page{width:100%;}
 
-#header {position:relative; z-index:1000; top:0; left:0; right:0; display:block; width:100%;}
+#header {z-index:1000; top:0; left:0; display:block; width:100%;}
+.header_r{position:relative;}
+.header_f{position:fixed;}
 .ht_50 {height:50px;}
 .ht_45 {height:45px;}
 #header .btn_back{position:absolute; top:0; left:0; z-index:1; width:40px; height:100%;}
