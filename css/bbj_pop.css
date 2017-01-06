@@ -16,6 +16,23 @@
 
 .shadow{box-shadow:1px 3px 5px #7c7c7c;}
 
+/*--------------------------------------------------- 공통알림창 ---------------------------------------------------*/
+/* 알림창 헤더 */
+.pop_common_h{position:relative; width:100%; height:35px; line-height:36px; background-color:#f2f2f2; border-bottom:1px solid #dcdcdc;}
+.pop_common_h h2{width:100%; height:100%; color:#555555; text-align:center; font-size:15px; font-weight:400; letter-spacing:3px;}
+
+/* 알림창 콘텐츠 */
+.pop_common_con{position:relative; width:100%; height:auto; line-height:18px; padding:20px 0px; box-sizing:border-box; text-align:center; font-size:15px;}
+
+/* 알림창 하단 */
+.pop_common_bot{position:relative; width:100%; height:auto; border-top:1px solid #dcdcdc;}
+.pop_common_bot:after{contnet:""; display:block; clear:both;}
+.pop_common_bot .pop_btn_1ea{width:100%; height:45px; line-height:46px;}
+.pop_common_bot .pop_btn_2ea{width:50%; height:45px; line-height:46px; float:left;}
+.pop_common_bot .pop_btn_2ea:last-of-type{border-left:1px solid #dcdcdc; box-sizing:border-box;}
+.pop_common_bot .pop_btn_1ea a, .pop_common_bot .pop_btn_2ea a{display:block; width:100%; height:100%; color:#0b99e0; text-align:center;}
+.pop_common_bot .pop_btn_1ea a:active, .pop_common_bot .pop_btn_2ea a:active{background-color:#eaf5fa;}
+
 /*--------------------------------------------------- 허위매물 신고하기 ---------------------------------------------------*/
 /* 신고하기 헤더 */
 .pop_report_h{position:relative; width:100%; height:50px; line-height:50px;}
